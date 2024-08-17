@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    
+    <title>Library Assistant</title>
+    <script src="{{ url_for('static', filename='css/script.js') }}"></script>
+</head>
+<body>
+    <div class="chat-container">
+        <h1 id="title">Library Assistant</h1>
+        <div id="chatBox" class="chat-box"></div>
+        <div class="queryBox">
+            <input type="text" id="queryText" class="message-input" placeholder="Enter your query">
+            <button class="send-button" onclick="sendQuery()">Send</button>
+        </div>
+    </div>
+</body>
+</html>
